@@ -2,49 +2,66 @@
 -- Task: Write a query that shows all the information about all the salespeople
 -- in the database. Use a basic select query.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT *
+FROM salespeople;
 
 -- Problem 2:
 -- Task: Write a query that shows all the information about all salespeople
 -- from the 'Northwest' region.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT *
+FROM salespeople
+WHERE region = 'Northwest';
 
 -- Problem 3:
 -- Task: Write a query that shows just the emails of the salespeople from
 -- the 'Southwest' region.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT email
+FROM salespeople
+WHERE region = 'Southwest';
 
 -- Problem 4:
 -- Task: Write a query that shows the given name, surname, and email of all
 -- salespeople in the 'Northwest' region.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT email, first_name, last_name
+FROM salespeople
+WHERE region = 'Northwest';
 
 -- Problem 5:
 -- Task: Write a query that shows the common name of melons that cost more
 -- than $5.00.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT common_name
+FROM melons
+WHERE price > 5;
 
 -- Problem 6:
 -- Task: Write a query that shows the common name and price for all
 -- watermelons that cost more than $5.00.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT common_name
+FROM melons
+WHERE melon_type = 'Watermelon'
+ AND price > 5;
 
 -- Problem 7:
 -- Task: Write a query that displays all common names of melons that
 -- start with the letter 'C'.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT common_name
+FROM melons
+WHERE common_name LIKE 'C%';
 
 -- Problem 8:
 -- Task: Write a query that shows the common name of any melon with
 -- 'Golden' anywhere in the common name.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT common_name
+FROM melons
+WHERE common_name LIKE '%Golden%';
+
 
 -- Problem 9:
 -- Task: Write a query that shows all the distinct regions that a
